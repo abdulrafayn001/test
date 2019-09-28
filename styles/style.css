@@ -1,0 +1,133 @@
+.hero {
+  font-family: 'Dosis', sans-serif;
+  background: -webkit-gradient(linear, left top, right bottom, from(#2196F3), to(#009688));
+  background: linear-gradient(to bottom right, #2196F3, #009688);
+  height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .h {
+  text-align: center;
+}
+
+.hero .h:hover {
+  font-family: 'Kaushan Script', cursive;
+  color: #FDDB27FF;
+}
+
+#hero {
+  text-decoration: none;
+}
+
+header {
+  font-family: 'Fredoka One', cursive;
+}
+
+header .nav-item:hover {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 40px;
+}
+
+header ul li ul {
+  background: #323a40;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+header li {
+  font-size: 25px;
+}
+
+.container {
+  height: auto;
+  margin-top: 3%;
+}
+
+.container .row > div {
+  background-color: aliceblue;
+  padding: 5%;
+  margin-top: 5%;
+}
+
+footer {
+  background-color: #323a40;
+  color: white;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+#ucp-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #323a40;
+  display: block;
+}
+
+#pgc-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #323a40;
+  display: block;
+}
+
+#aps-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #323a40;
+  display: block;
+}
+
+@media screen and (max-width: 1080px) {
+  li.nav-item {
+    display: none;
+  }
+  .row > .col-sm-8 {
+    display: none;
+  }
+  ul li:hover > ul,
+  ul li:hover > a,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    text-decoration: none;
+  }
+  .row > .col-sm-12 {
+    border: 3px solid #323a40;
+  }
+  .container {
+    height: auto;
+  }
+  .row > .col-2-md {
+    background-color: white;
+  }
+  .menue {
+    display: contents;
+  }
+}
+/*# sourceMappingURL=style.css.map */
