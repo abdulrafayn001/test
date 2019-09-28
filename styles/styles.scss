@@ -1,0 +1,115 @@
+$themeColor : rgb(50, 58, 64);
+$backgroundColor : linear-gradient(to bottom right, #2196F3, #009688);
+$backgroundColor-col : aliceblue;
+
+.hero{
+    font-family: 'Dosis', sans-serif;
+    background: $backgroundColor;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .h{
+        text-align: center;
+    }
+    .h:hover{
+        font-family: 'Kaushan Script', cursive;
+        color: #FDDB27FF;
+    }
+}
+
+#hero{
+    text-decoration: none;
+}
+
+header{
+    font-family: 'Fredoka One', cursive;
+    .nav-item:hover{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 40px;
+    }
+    ul li ul {
+        background :$themeColor;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+    }
+    li {
+        font-size: 25px;
+    }
+}
+
+.container{
+    height: auto;
+    margin-top: 3%;
+    .row >div{
+        background-color: $backgroundColor-col;
+        padding: 5%;
+        margin-top: 5%;
+    }
+}
+
+footer{
+    background-color:$themeColor;
+    color: white;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+@mixin logos {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(50, 58, 64);
+    display: block; 
+}
+
+#ucp-logo {
+    @include logos();
+}
+#pgc-logo{
+    @include logos();
+}
+#aps-logo{
+    @include logos();
+}
+
+@media screen and (max-width: 1080px) {
+    li.nav-item{
+      display: none;
+    }
+    .row > .col-sm-8{
+        display: none;
+    }
+    
+    ul li:hover > ul,
+    ul li:hover > a,
+    ul li:focus-within > ul,
+    ul li ul:hover,
+    ul li ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        text-decoration: none;
+    }
+    .row > .col-sm-12{
+        border: 3px solid $themeColor;
+    }
+    .container{
+        height: auto;
+    }
+    .row > .col-2-md{
+        background-color: white;
+    }
+    .menue{
+        display: contents;
+    }
+
+}
+
